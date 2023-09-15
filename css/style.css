@@ -104,7 +104,7 @@ a {
     text-decoration: none; /* No Underlining */
 }
 a:visited {
-    color: #white;
+    color: white;
     text-decoration: none;
 }
 a:hover,
@@ -141,7 +141,7 @@ a:active {
     padding: 0 15px;
 }
 #work .row {
-    margin; 25px,0 /*25px top and bottom, 0 left and right */
+    margin: 25px, 0 /*25px top and bottom, 0 left and right */
 }
 #hero h1 {
     text-align: center;
@@ -173,4 +173,7 @@ header { /* my navigation bar has a margin on the left but overflows on the righ
     padding: 10px;
     margin: 0 auto;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5)  ;
+}
+#plutopay {
+    padding-top: 100px;
 }
