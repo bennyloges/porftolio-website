@@ -227,6 +227,9 @@ nav > ul > li > a {
 #plutopay {
     padding-top: 100px;
 }
+#plutopay img {
+    width: 100%
+}
 #about-page .button {
     float: center;
     margin: 0 auto;
