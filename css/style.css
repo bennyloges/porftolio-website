@@ -2,24 +2,24 @@ header { /*   */
     position: fixed;
     box-sizing: border-box;
     width: 100%;
-    background-color: #487779;
-    text-align: center;
+    background-color: #094347;
     padding: 10px;
     margin: 0 auto;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5)  ;
-}body {
+}
+body {
     background-color:white;
     font-family: 'Inter', sans-serif;
     font-size: 16px; /* Sets the font size to 16px */
     font-weight: 300; /* Sets the font weight to 300 */
     line-height: 1.6; /* Sets the line-height to 1.6*/
-    color: black;
+    color: #333;
 }
 h1,h2,h3,h4 {
     line-height: 1.4;
 }
 h1 {
-    font-size: 2.75em;
+    font-size: 2.5em;
     font-weight: 700;
 }
 h2 {
@@ -41,7 +41,9 @@ img {
 .social-media img {
     width: 40px;
 }
-
+/* ===========================
+        Home Page 
+============================*/
 .button {
     display:inline-block;
     background-color:#487779;
@@ -71,44 +73,49 @@ img {
     color:white;
 }
 .button.contact {
-    background-color: transparent;
-    color: #487779;
-    border: 2px solid #487779;
+    background-color: rgb(224, 241, 241);
+    color: #041718;
+    border: 2px solid #041718;
     text-transform: uppercase;
 }
 .button.contact:hover {
     background-color: #487779;
     color: white;
+    border: #487779;
 }
 .button.contact:active {
-    background-color: #233130;
+    background-color: #041718;
     color:white;
+    border: #041718;
 }
 #hero {
-    color:#233130;
-    background-color:#e2e4e3;
+    color:black;
+    background-color:white;
     box-sizing: border-box;
     text-align: center;
-    padding-top: 100px;
-    padding-bottom: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 10px;
     width: 100%;
     display: inline-block;
 }
 #hero h1 {
-    font-weight: 600;
+    font-weight: 400;
+    padding-top: 75px;
+}
+#hero p {
+    color: rgb(102, 102, 102);
 }
 #hero span {
     font-weight: 700;
+    color: #038188;
 }
 #hero img {
     float: top;
     width: 100%;
+    padding-left: 75px;
 }
 footer {
-    color:#233130;
-    background-color:#e2e4e3;
+    color:white;
+    background-color:#094347;
     box-sizing: border-box;
     text-align: center;
 }
@@ -195,58 +202,10 @@ a:active {
     position: relative;
     bottom: 0 auto;
 }
-
-/* Layout Styling */
-.container {
-    padding: 0 15px;
-}
-#work .row {
-    margin: 25px, 0 /*25px top and bottom, 0 left and right */
-}
-#hero h1 {
-    text-align: center;
-}
-.logo {
-    max-width: 250px;
-}
-nav > ul {
-    display: inline-block;
-    list-style-type: none;
-    padding: 0;
-    width: 100%;
-}
-nav > ul > li {
-    display: inline-block;
-}
-nav > ul > li > a {
-    padding: 0 15px;
-    text-transform: uppercase;
-    font-weight: 700;
-    color: white;
-}
-#plutopay {
-    padding-top: 100px;
-}
-#plutopay img {
-    width: 100%
-}
-#about-page .button {
-    float: center;
-    margin: 0 auto;
-}
-#about-page h3 {
-    margin-top: 0;
-}
-#about-picture {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-}
 @keyframes color-change {
     0% {fill: #edc655;}
     50% {fill: #fcffad;}
     100% {fill: #f76414;}
-    
 }
 @keyframes cloud-move {
     from {transform: translate(0,50px);}
@@ -269,6 +228,99 @@ nav > ul > li > a {
 .cloud-back { 
     animation: 34s cloud-move-reverse infinite alternate linear;
 }
+/* ==========================
+        Layout Styling 
+===========================*/
+.container {
+    padding: 0 15px;
+    margin: 0 75px auto;
+}
+#work .row {
+    margin: 25px, 0 /*25px top and bottom, 0 left and right */
+}
+#hero h1 {
+    text-align: center;
+}
+
+/* ===========================
+        Navigation Bar 
+============================*/
+.logo {
+    min-width: 150px;
+    padding-top: 12px;
+}
+nav > ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+nav > ul > li > a {
+    padding: 0 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: white;
+}
+.navtoggle li:not(:last-child) {
+    display: none;
+}
+.navtoggle, .navtoggle.responsive {
+    position: relative;
+}
+.navtoggle li .icon {
+    position: absolute;
+    right: 0;
+    padding-right: 0;
+    top: 2px;
+    font-size: 20px;
+}
+.navtoggle.responsive nav {
+    padding: 24px 0 0;
+}
+.navtoggle.responsive li {
+    display: block;
+    text-align: right;
+    padding: 10px 0;
+    border-top: 1px solid rgba(119, 182, 182, 0.5);
+}
+.navtoggle.responsive li:last-child {
+    padding: 0 0 10px;
+}
+.title span {
+    font-weight: 700;
+    color: #038188;
+}
+.title {
+    padding-top: 50px;
+    text-align: center;
+}
+/* ===========================
+        Projects Page 
+============================*/
+#plutopay {
+    padding-top: 100px;
+}
+#plutopay img {
+    width: 100%
+}
+/* ===========================
+        About Page 
+============================*/
+#aboutme {
+    box-sizing: border-box;
+    text-align: center;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+    display: inline-block;
+}
+#about-page .button {
+    float: center;
+    margin: 0 auto;
+}
+#about-page h3 {
+    margin-top: 0;
+}
 
 /* Breakpoints media queries - Screen Size */
 
@@ -284,11 +336,26 @@ nav {
     float: right;
     margin-top: 4px;
 }
+nav > ul {
+    margin: 1em 0;
+}
+nav > ul > li {
+    display: inline-block;
+}
+.navtoggle li:not(:last-child) {
+    display: inline-block;
+}
+.navtoggle li:last-child {
+    display: none;
+}
 .logo {
-    margin-top: 20px;
+    margin-top: 12px;
 }
 #hero {
-    padding-top: 75px;
+    padding-top: 30px;
+}S
+.title {
+    padding-top: 400px;
 }
 .col-md-6 {
     width:50%;
@@ -302,21 +369,25 @@ nav {
 #about-page h2 {
     text-align: center;
 }
+.logo {
+    max-width: 250px;
+}
 }
 /*================================
 Large devices (1024px and larger)
 ================================== */
 @media only screen and (min-width: 1024px) {
 .col-lg-7 {
-    width:60%;
+    width:55%;
     float: right;
 }
 .col-lg-5 {
-    width:40%;
+    width:45%;
     float: left; 
+    margin-top: -50px;
 }
 #hero {
-    padding-top: 100px;
+    padding-top: 120px;
     text-align: left;
 }
 #hero h1 {

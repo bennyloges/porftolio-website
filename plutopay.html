@@ -2,11 +2,12 @@
 <html lang="en" dir="ltr">
 	<head>
 		<meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Ben Logan Portfolio</title>
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="icon" type="image/png" sizes="32x32" href="./img/Branding/favicons/favicon-32x32.png">
+		<script src="https://kit.fontawesome.com/37a9fa6ecf.js" crossorigin="anonymous"></script>		<link rel="apple-touch-icon" sizes="180x180" href="./img/Branding/favicons/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="./img/Branding/favicons/favicon-32x32.png">
 		<link rel="icon" type="image/png" sizes="16x16" href="./img/Branding/favicons/favicon-16x16.png">
 		<link rel="manifest" href="./img/Branding/favicons/site.webmanifest">
 		<link rel="mask-icon" href="./img/Branding/favicons/safari-pinned-tab.svg" color="#5bbad5">
@@ -16,15 +17,16 @@
 	<body>
 		<header>
 			<div class="container">
-				
-				<img src="./img/myportfolio/Logo.svg" alt="Ben's Logo">
-				<nav>
-					<ul>
-						<li><a href="index.html">Work</a></li>
-						<li><a href="about.html">About</a></li>
-						<li><a href="#contact">Contact</a></li>
-					</ul>
-				</nav>
+				<div class="navtoggle" id="myNavtoggle">
+					<img src="./img/myportfolio/Logo2.svg" alt="Ben's Logo" class="logo">
+					<nav>
+							<ul class="navigation">
+								<li><a href="index.html">Work</a></li>
+								<li><a href="about.html">About</a></li>
+								<li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+								<li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fa-solid fa-bars"></i></a></li>
+							</ul>
+					</nav>
 			</div>
 		</header>
 		<main class="container">
@@ -259,4 +261,6 @@
 				<p>copyright Ben Logan 2023</p>
 			</div>
 		</footer>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+		<script src="js/main.js"></script>
 	</body>
