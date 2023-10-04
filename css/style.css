@@ -175,11 +175,11 @@ a:active {
     border: 3px solid #e0729d;
     border-radius: 30px;
 }
-#float-text img {
+/*#float-text img {
     width: 100%;
     margin-top: 10px;
     margin-right: 10px
-}
+}*/
 #float-text-2 img {
     width: 100%;
     margin-top: 10px;
@@ -357,10 +357,10 @@ nav > ul > li {
 .title {
     padding-top: 400px;
 }
-.col-md-6 {
+/*.col-md-6 {
     width:50%;
     float: left;
-}
+}*/
 .row::after {
     content:"";
     clear: both;
@@ -377,15 +377,15 @@ nav > ul > li {
 Large devices (1024px and larger)
 ================================== */
 @media only screen and (min-width: 1024px) {
-.col-lg-7 {
+/*.col-lg-7 {
     width:55%;
     float: right;
 }
-.col-lg-5 {
+/*.col-lg-5 {
     width:45%;
     float: left; 
     margin-top: -50px;
-}
+}*/
 #hero {
     padding-top: 120px;
     text-align: left;
