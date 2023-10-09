@@ -1,0 +1,447 @@
+/* TYPOGRAPHY */
+
+body {
+    background-color:white;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px; /* Sets the font size to 16px */
+    font-weight: 300; /* Sets the font weight to 300 */
+    line-height: 1.6; /* Sets the line-height to 1.6*/
+    color: #333;
+}
+h1,h2,h3,h4 {
+    line-height: 1.4;
+}
+h1 {
+    font-size: 2.5em;
+    font-weight: 700;
+}
+h2 {
+    font-size: 2.25em;
+    font-weight: 700;
+}
+h3 {
+    font-size: 1.75em;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+h4 {
+    font-size: 1.35em;
+    font-weight: 400;
+}
+h1 span, h2 span, h3 span {
+	color: #038188;
+    font-weight: 700;
+}
+
+/* NAVIGATION */
+header { /*   
+    position: fixed;*/
+    box-sizing: border-box;
+    background-color: #094347;
+    margin: 0 auto;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5)  ;
+}
+
+.logo {
+    width: 160px;
+    padding-top: 12px;
+}
+.navbar {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+nav > ul {
+    display: flex;
+    list-style-type: none;
+}
+nav > ul > li > a {
+    padding: 0 15px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.85rem;
+    color: white;
+}
+
+* {
+    scroll-behavior: smooth;
+}
+
+/* DROPDOWN MENU */
+
+.navtoggle li:not(:last-child) {
+    display: none;
+}
+.navtoggle, .navtoggle.responsive {
+    position: relative;
+}
+.navtoggle li .icon {
+    position: absolute;
+    right: 0;
+    padding-right: 0;
+    top: 2px;
+    font-size: 20px;
+}
+.navtoggle.responsive nav {
+    padding: 24px 0 0;
+}
+.navtoggle.responsive li {
+    display: block;
+    text-align: right;
+    padding: 10px 0;
+    border-top: 1px solid rgba(119, 182, 182, 0.5);
+}
+.navtoggle.responsive li:last-child {
+    padding: 0 0 10px;
+}
+.title span {
+    font-weight: 700;
+    color: #038188;
+}
+.title {
+    padding-top: 50px;
+    text-align: center;
+}
+
+/* LAYOUT */
+
+.divider {
+	border-bottom: 1px solid rgb(102, 102, 102,0.2);
+	margin: 20px 0;
+}
+
+/* CONTAINER */
+
+.container {
+	padding: 20px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    height: auto;
+
+}
+
+/* HERO SECTION */
+
+
+#hero-section .container img{
+	width: auto;
+    max-height: 500px;
+}
+
+.hero-details {
+    justify-content: center;
+}
+.hero-details p, .project-text p, #about-section p, #contact-section .contact-header p {
+	color:  rgb(122, 122, 122);
+}
+
+/* ABOUT ME SECTION */
+
+#about-section {
+    background: rgba(124, 159, 160, 0.10);
+    border-top: 1px solid rgb(102, 102, 102,0.2);
+    border-bottom: 1px solid rgb(102, 102, 102,0.2);
+}
+
+#about-section img {
+    width: 50%;
+    height: auto
+}
+
+.skills-col, .tools-col {
+    width: 50%;
+    padding-left: 50px;
+    margin: 0 auto;
+}
+
+.skills-tools-details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: top;
+    gap: 10px;
+}
+
+.about-details h1, .about-details h2, .about-details p {
+    text-align: center;
+}
+
+/* PROJECTS SECTION */
+
+.project-header, .project-details h2, .contact-header {
+    text-align: center;
+
+}
+
+.project-details {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0 auto;
+    /*background-color: green;*/
+    border: 1px solid rgb(102, 102, 102,0.5);
+    border-radius: 30px;
+    width: 300px;
+    height: 600px;
+    box-shadow: 0 4px 15px rgb(102, 102, 102);
+}
+
+.project-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    position: relative;
+    border-radius: 30px 30px 0 0 ;
+}
+
+#web-design img {
+    width: 300px;
+    height: 275px;
+    object-fit: cover;
+}
+
+.project-img img {
+    width: 100%;
+    object-fit: cover;
+    display: block;   
+    margin: auto;
+    border-radius: 30px 30px 0 0;
+    border: 1px solid rgb(102, 102, 102,0.5);
+} 
+
+.project-link {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: rgba(0,0,0,0.6);
+    border-radius: 30px 30px 0 0;
+    border: 1px solid rgb(102, 102, 102,0.5);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: 0.6s;
+}
+
+.project-link a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.project-link:hover {
+    opacity: 1;
+}
+
+
+.project-text {
+    padding: 20px;
+    height: 300px;
+    font-size: 0.9rem;
+}
+
+/* PROJECT ANIMATION */
+
+.project-details svg {
+    object-fit: cover;
+    height: 300px;
+    width: auto;
+    border-radius: 30px 30px 0 0 ;
+    background-color: pink;
+}
+
+@keyframes color-change {
+    0% {fill: #edc655;}
+    50% {fill: #fcffad;}
+    100% {fill: #f76414;}
+}
+@keyframes cloud-move {
+    from {transform: translate(0,50px);}
+    to {transform: translate(200px,50px);}
+}
+@keyframes cloud-move-reverse {
+    from {transform: translate(446px,48px);}
+    to {transform: translate(100px, 48px);}
+}
+.sun {
+    animation: 4s color-change infinite alternate linear;
+}
+.cloud-front {
+    animation-duration: 30s;
+    animation-name: cloud-move;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+.cloud-back { 
+    animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+/* CONTACT FORM */
+
+.contact-section {
+    margin: 0 auto;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    background-color: rgba(124, 159, 160, 0.15);
+    padding: 20px;
+    margin: 0 auto;
+    width: 100%;
+    border-radius: 30px;
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: space-between;
+    justify-content: center;
+}
+
+label, input, textarea {
+    display: block;
+    justify-content: center;
+    margin: 0.5rem 0;
+}
+
+label, input {
+    width: 100%;
+    margin-right:10px;
+}
+
+input, #comments {
+    border: 1px solid rgb(102, 102, 102, 0.8);
+    border-radius: 4px;
+}
+
+input {
+    height: 1.5rem;
+}
+
+
+::placeholder {
+    font-family: 'Inter', sans-serif;
+}
+
+#comments {
+    width: 100%;
+
+}
+
+.contact-form label {
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+#contact-section button {
+    width: 100px;
+    height: 30px;
+    margin: 0 auto;
+    border-radius: 100px;
+    border: none;
+    box-shadow: 0 5px 10px rgb(102, 102, 102);
+    color: white;
+    background-color: #287668;
+}
+
+/* FOOTER STYLING */
+
+footer {
+    color:white;
+    background-color:#094347;
+    box-sizing: border-box;
+    text-align: center;
+}
+footer img {
+    margin-top: 20px;
+}
+.footer-text {
+    width: 75%;
+    margin: 0 auto;
+    padding: 10px 0;
+    font-size: 0.9rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover,footer a:focus {
+    color: #a6bbb6;
+    text-decoration: none;
+}
+
+footer a:active {
+    color: #233130;
+    text-decoration: none;
+}
+
+.contact-icons {
+    padding: 10px 0;
+
+}
+
+.copyright-text {
+    font-size: .75rem;
+    padding: 10px 0;
+    font-style: italic;
+}
+/*================================
+Medium devices (640px and larger)
+================================== */
+@media only screen and (min-width: 640px) {
+
+    #hero-section {
+        padding-top: 20px;   
+    }
+    header {
+        text-align: unset;
+    }
+    nav {
+        width: auto;
+        float: right;
+        margin-top: 4px;
+    }
+    nav > ul {
+        margin: 1em 0;
+    }
+    nav > ul > li {
+        display: inline-block;
+    }
+    .navtoggle li:not(:last-child) {
+        display: inline-block;
+    }
+    .navtoggle li:last-child {
+        display: none;
+    }
+    .logo {
+        margin-top: 12px;
+        max-width: 250px;
+    }
+    .container {
+        max-width: 1200px;
+    }
+}

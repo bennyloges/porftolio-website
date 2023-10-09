@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Ben Logan Portfolio</title>
-		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/styles2.css">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<script src="https://kit.fontawesome.com/37a9fa6ecf.js" crossorigin="anonymous"></script>		<link rel="apple-touch-icon" sizes="180x180" href="./img/Branding/favicons/apple-touch-icon.png">
 		<link rel="icon" type="image/png" sizes="32x32" href="./img/Branding/favicons/favicon-32x32.png">
@@ -16,14 +16,15 @@
 	</head>
 	<body>
 		<header>
-			<div class="container">
+			<div class="navbar">
 				<div class="navtoggle" id="myNavtoggle">
 					<img src="./img/myportfolio/Logo2.svg" alt="Ben's Logo" class="logo">
 					<nav>
 							<ul class="navigation">
-								<li><a href="index.html">Work</a></li>
-								<li><a href="about.html">About</a></li>
-								<li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+								<li><a href="home.html" onclick="menuToggle()">Home</a></li>
+                                <li><a href="#about-section" onclick="menuToggle()">About</a></li>
+								<li><a href="#projects-section" onclick="menuToggle()">Projects</a></li>
+								<li><a href="#contact-section" onclick="menuToggle()">Contact</a></li>
 								<li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fa-solid fa-bars"></i></a></li>
 							</ul>
 					</nav>
@@ -246,21 +247,18 @@
         </div>
 		</main>
 		
-		<footer id="contact">
-			<div>
-				<h2>Get in Touch</h2>
-				<p>I'd love to work with you. Please get in contact with me by completing the contact form below, call me on <a href="tel:+123456789">+12 345 6789</a> or follow me on my channels below.</p>
-				<div>
-					<a class="button contact" href="mailto:example@email.com">Email me</a>
-				</div>
-				<div>
-					<a class="social-media" href="https://www.linkedin.com/in/benjamin-logan-919796a8/" target="blank">
-						<img src="./img/myportfolio/linkedin.svg" alt="Linkedin">
-					</a>
-				</div>
-				<p>copyright Ben Logan 2023</p>
-			</div>
-		</footer>
+        <footer>
+            <p class="footer-text">I'd love to work with you. Please get in contact with me by completing the contact form below, call me on <a href="tel:+123456789">+12 345 6789</a> or follow me on my channels below.</p>
+            <div class="contact-icons">
+                <a class="button contact" href="mailto:example@email.com"><i class="fa-solid fa-envelope" style="color: #ffffff;"></i></a>
+                <a class="social-media" href="https://www.linkedin.com/in/benjamin-logan-919796a8/" target="blank">
+                <i class="fa-brands fa-linkedin" style="color: #ffffff;" class="social-media-icon"></i>
+                </a>
+            </div>
+            <div class="copyright-text">
+                <p>copyright Ben Logan 2023</p>
+            </div>
+        </footer>
         <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-		<script src="js/main.js"></script>
-	</body>
+        <script src="js/main.js"></script>
+</body>
