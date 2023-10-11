@@ -117,7 +117,7 @@ nav > ul > li > a {
 
 /* CONTAINER */
 
-.container {
+.container, .carousel {
 	padding: 20px;
     margin: 0 auto;
     display: flex;
@@ -155,6 +155,10 @@ nav > ul > li > a {
 #about-section img {
     width: 50%;
     height: auto
+}
+
+#about-section #sml-device {
+    display: none;
 }
 
 .skills-col, .tools-col {
@@ -334,8 +338,7 @@ input {
     height: 1.5rem;
 }
 
-
-::placeholder {
+::placeholder, #comments {
     font-family: 'Inter', sans-serif;
 }
 
@@ -409,16 +412,149 @@ footer a:active {
     padding: 10px 0;
     font-style: italic;
 }
+
 /*================================
-Medium devices (640px and larger)
+Small devices (364px and 640px)
 ================================== */
-@media only screen and (min-width: 640px) {
+
+@media only screen and (360px <=width <= 640px  ) {
+    .navbar {
+        padding-top: 30px;
+        padding-left: 40px;
+        padding-right: 40px;
+        align-items: center;
+    }    
+
+    #hero-section img {
+        max-width: 100%;
+    }
+        
+    #hero-section .container, #about-section .container {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            height: auto;
+    }
+    #about-section #lrg-device {
+        display: none;
+    }
+ 
+    .skills-tools-details {
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+    }
+
+    #about-section ul, #about-section h3 {
+        text-align: left;
+    }
+    .container, #contact-section {
+        padding: 40px;
+    }
+    #projects-section .carousel {
+    display: flex;
+  
+    grid-auto-flow: column;
+    scroll-behavior: auto;
+    overflow-y: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+    scroll-snap-align: start;
+    scrollbar-width: none;
+    gap: 50px;
+    }
+    .project-details {
+        box-shadow: none;
+    }
+
+    .carousel::-webkit-scrollbar {
+        display: none;
+    }
+    
+    #contact-section .container {
+        padding: 0;
+    }
+
+    #contact-section .contact-form .contact-details {
+        flex-direction: column;
+
+
+    }
+
+}
+
+/*================================
+Medium devices (640px and smaller)
+================================== */
+
+@media only screen and (640px <=width <= 1024px  ) {
+    .navbar {
+        padding-top: 30px;
+        padding-left: 40px;
+        padding-right: 40px;
+        align-items: center;
+    }    
+        
+    #hero-section .container, #about-section .container {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            height: auto;
+    }
+    #about-section #lrg-device {
+        display: none;
+    }
+    #about-section #sml-device {
+        display: block;
+        margin: 0 auto;
+    }
+    .skills-tools-details {
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+    }
+
+    #about-section ul, #about-section h3 {
+        text-align: left;
+    }
+    .container, #contact-section {
+        padding: 40px;
+    }
+    #projects-section .carousel {
+    display: flex;
+  
+    grid-auto-flow: column;
+    scroll-behavior: auto;
+    overflow-y: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+    scroll-snap-align: start;
+    scrollbar-width: none;
+    gap: 50px;
+    }
+    .project-details {
+        box-shadow: none;
+    }
+
+    .carousel::-webkit-scrollbar {
+        display: none;
+    }
+
+    #contact-section .contact-form .contact-details {
+        flex-direction: column;
+
+    }
+
+}
+/*================================
+Larger devices (1024px and larger)
+================================== */
+@media only screen and (min-width: 1024px) {
 
     #hero-section {
         padding-top: 20px;   
-    }
-    header {
-        text-align: unset;
     }
     nav {
         width: auto;
@@ -443,5 +579,6 @@ Medium devices (640px and larger)
     }
     .container {
         max-width: 1200px;
+        padding: 50px;
     }
 }
