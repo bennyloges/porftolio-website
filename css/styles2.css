@@ -190,7 +190,6 @@ nav > ul > li > a {
     display: flex;
     flex-direction: column-reverse;
     margin: 0 auto;
-    /*background-color: green;*/
     border: 1px solid rgb(102, 102, 102,0.5);
     border-radius: 30px;
     width: 300px;
@@ -205,6 +204,38 @@ nav > ul > li > a {
     width: 300px;
     position: relative;
     border-radius: 30px 30px 0 0 ;
+}
+
+.button {
+    display: flex;
+    flex-direction: center;
+    padding-bottom: 20px;
+}
+
+.project-button {
+    display: inline-block;
+    padding: 0;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    text-decoration: none;
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+    border-radius: 100px;
+    border: none;
+    box-shadow: 0 5px 10px rgb(102, 102, 102);
+    background-color: #038188;
+    font-size: 0.8rem;
+}
+
+
+.project-button:hover {
+    background-color: #014a4e;
+}
+
+.project-button:active {
+    scale: 0.9;
 }
 
 #web-design img {
@@ -254,8 +285,16 @@ nav > ul > li > a {
 
 .project-text {
     padding: 20px;
-    height: 300px;
+    height: 320px;
     font-size: 0.9rem;
+}
+
+.text-cutoff {
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+
 }
 
 /* PROJECT ANIMATION */
@@ -361,7 +400,7 @@ input {
     border: none;
     box-shadow: 0 5px 10px rgb(102, 102, 102);
     color: white;
-    background-color: #287668;
+    background-color:  #038188;
 }
 
 /* FOOTER STYLING */
@@ -403,8 +442,15 @@ footer a:active {
 }
 
 .contact-icons {
-    padding: 10px 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
 
+.button-contact {
+    margin-bottom: 0;
 }
 
 .copyright-text {
@@ -452,9 +498,15 @@ Small devices (364px and 640px)
     .container, #contact-section {
         padding: 40px;
     }
+
+    .project-button {
+        display: block;
+    }
+
+
     #projects-section .carousel {
     display: flex;
-  
+    max-height: auto;
     grid-auto-flow: column;
     scroll-behavior: auto;
     overflow-y: auto;
