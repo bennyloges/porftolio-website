@@ -144,6 +144,41 @@ nav > ul > li > a {
 	color:  rgb(122, 122, 122);
 }
 
+.hero-details .row {
+    width: 300px;
+    display: inline-block;
+    padding-top: 20px;
+    align-content: center;
+
+}
+
+.project-button a {
+    text-decoration: none;
+    color: white;
+}
+
+.hero-details .row .project-button {
+    margin-right: 10px;
+}
+
+.hero-details .button {
+    display: inline-block;
+    align-items: center;
+    padding: 0 3px;
+}
+
+
+.hero-details .row .button, .hero-details .row .button:hover, .hero-details .row .button:active {
+    text-decoration: none;
+    color:rgb(102, 102, 102);
+    font-size: .9rem;
+}
+    
+.project-button a:visited, .project-button a:hover,.project-button a:focus {
+    color: white;
+    text-decoration: none;
+}
+
 /* ABOUT ME SECTION */
 
 #about-section {
@@ -459,6 +494,143 @@ footer a:active {
     font-style: italic;
 }
 
+/* PROJECT CASE STUDY PAGES */
+
+#plutopay .divider {
+    width: 1200px;
+    margin: 20px auto;
+}
+
+#intro .project-title {
+    font-size: 1.5rem;
+}
+
+#intro #plutopay-img {
+    width: 1200px;
+    height: 300px;
+    object-fit: cover;
+}
+
+#intro #design-prc-img {
+    width: 1200px;
+    height: auto;
+}
+
+
+.container-col {
+    padding: 20px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 1200px;
+}
+
+.container-row {
+    padding: 20px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+    width: 1200px;
+}
+
+.timeline {
+    width: 30%;
+}
+.project-descr {
+    width: 70%;
+}
+
+.section-title {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+.section-title img, #define .section-title img {
+    width: 50px;
+    height: 50px;
+}
+
+.section-title img #goals{
+    width: 20px;
+    height: 20px;
+}
+
+.container-col #align-ctr {
+    align-items: center;
+}
+
+#userfeedback, #affinity-mapping2 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#define .container-project {
+    width: 100px;
+    height: auto;
+}
+
+.img-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    text-align: center;
+    width: 200px;
+}
+
+#retro {
+    margin-bottom: 100px;
+}
+
+
+/* PLUTOPAY PAGE */
+
+#define .container-project {
+    text-align: left; 
+    justify-content: center;
+    align-items: left;
+    margin: 0 auto;
+}
+
+#define {
+    margin: 0 auto;
+}
+
+#define img {
+    width: 1200px;
+    height: auto;
+}
+
+.container #userflow {
+    margin: 0 auto;
+}
+
+.container #userflow img {
+    width: 300px;
+}
+
+#affinity-mapping2, #userfeedback {
+    width: 100%;
+    height: auto;
+}
+
+#prototype-img {
+    width: 100%;
+    height: auto;
+}
+
+#iterate .container-row {
+    align-items: center;
+}
+
+
+
+
 /*================================
 Small devices (364px and 640px)
 ================================== */
@@ -482,6 +654,14 @@ Small devices (364px and 640px)
             align-items: center;
             height: auto;
     }
+
+    .hero-details .row {
+        width: 300px;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;        
+    }
+
     #about-section #lrg-device {
         display: none;
     }
@@ -555,6 +735,15 @@ Medium devices (640px and smaller)
             align-items: center;
             height: auto;
     }
+
+    .hero-details .row {
+        width: 300px;
+        margin: 0 auto;
+        align-items: center;        
+    }
+
+    
+
     #about-section #lrg-device {
         display: none;
     }
