@@ -28,7 +28,7 @@ h4 {
     font-size: 1.35em;
     font-weight: 400;
 }
-h1 span, h2 span, h3 span {
+h1 span, h2 span, h3 span, #webdesign p span {
 	color: #038188;
     font-weight: 700;
 }
@@ -505,10 +505,18 @@ footer a:active {
     font-size: 1.5rem;
 }
 
-#intro #plutopay-img {
+#intro #plutopay-img, #intro #webdesign-img {
     width: 1200px;
     height: 300px;
     object-fit: cover;
+}
+
+#webdesign-img {
+    object-position: center;
+}
+
+#webdesign section #intro::after {
+    display: none;
 }
 
 #intro #design-prc-img {
