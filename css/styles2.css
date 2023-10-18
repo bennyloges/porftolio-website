@@ -90,6 +90,12 @@ nav > ul > li > a {
 .navtoggle.responsive nav {
     padding: 24px 0 0;
 }
+.navtoggle.responsive ul {
+    display: block;
+    float: right;
+    background-color: grey;
+
+}
 .navtoggle.responsive li {
     display: block;
     text-align: right;
