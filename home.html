@@ -16,17 +16,16 @@
 	</head>
 	<body>
 		<header>
-			<div class="navbar">
 				<div class="navtoggle" id="myNavtoggle">
-					<img src="./img/myportfolio/Logo2.svg" alt="Ben's Logo" class="logo">
 					<nav>
+                        <img src="./img/myportfolio/Logo2.svg" alt="Ben's Logo" class="logo">
 							<ul class="navigation">
 								<li><a href="home.html" onclick="menuToggle()">Home</a></li>
                                 <li><a href="#about-section" onclick="menuToggle()">About</a></li>
 								<li><a href="#projects-section" onclick="menuToggle()">Projects</a></li>
 								<li><a href="#contact-section" onclick="menuToggle()">Contact</a></li>
-								<li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fa-solid fa-bars"></i></a></li>
 							</ul>
+                            <label><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fa-solid fa-bars"></i></a></label>
 					</nav>
 			</div>
 		</header>
@@ -38,7 +37,7 @@
                     <h1>Hi, I'm <strong>Ben</strong> and I'm a <strong>UX/UI</strong> <span>Designer</span></h1>
                     <p>I'm passionate about solving real problems applying a <span>human-centred</span> approach to design. With every project, I bring a unique blend of <span>creativity</span> and <span>empathy</span>, crafting user experiences that not only captivate but also genuinely resonate with people, ultimately making their lives easier and more enjoyable.</p>
                     <div class="row" id="calltoaction">
-                        <div class="project-button" id="cat"><a href="#contact-section" onclick="menuToggle()">Contact me</a></div>
+                        <div class="project-button" id="cat"><a href="#contact-section">Contact me</a></div>
                         <div class="button" id="resume"><i class="fa-solid fa-cloud-arrow-down" style="color: #666666;"></i><a class="button" href="./files/cv.pdf" target="_blank" download>Download my resume</a></div>
                     </div>
                 </div>
@@ -78,6 +77,7 @@
                             </div>
                     </div>
             </div>
+            </div>
             </section>
 
            <!-- MY PROJECTS SECTION -->
@@ -113,7 +113,7 @@
                         <div class="project-img">
                             <img src="./img/myportfolio/webdesignimg.jpg" alt="web design image">
                             <div class="project-link">
-                                <a href="webdesign.html" id="plutopay-link">Read more</a>
+                                <a href="webdesign.html" id="webdesign-link">Read more</a>
                             </div>
                         </div>
                     </div>
@@ -739,7 +739,7 @@
                         <label for="name">Name<input type="text" name="name" id="name" required></label>
                         <label for="email">Email<input type="email" name="email" id="email" required></label>
                     </div>
-                    <label for="comments">Message<textarea type="textarea" name="comments" id="comments" rows="3" cols="30" placeholder="Enter your message here"></textarea></label>
+                    <label for="comments">Message<textarea name="comments" id="comments" rows="3" cols="30" placeholder="Enter your message here"></textarea></label>
                     <button class="submit-button" type="submit">Submit</button>
                 </form>
             </div>
@@ -753,13 +753,13 @@
             <p class="footer-text">Elevating user experiences, one interaction at a time.</p>
             <div class="contact-icons">
                 <a class="button-contact" href="mailto:example@email.com"><i class="fa-solid fa-envelope" style="color: #ffffff;"></i></a>
-                <a class="social-media" href="https://www.linkedin.com/in/benjamin-logan-919796a8/" target="blank"><i class="fa-brands fa-linkedin" style="color: #ffffff;" class="social-media-icon"></i></a>
+                <a class="social-media" href="https://www.linkedin.com/in/benjamin-logan-919796a8/" target="blank"><i style="color: #ffffff" class="social-media-icon"></i></a>
             </div>
             <div class="copyright-text">
                 <p>copyright Ben Logan 2023</p>
             </div>
         </footer>
-            <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-            <script src="js/main.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script src="js/main.js"></script>
     </body>
 </html>
