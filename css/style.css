@@ -628,8 +628,37 @@ footer a:active {
     align-items: center;
 }
 
+/* Back to Top Button */
 
+.back-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 3rem;
+    height: 3rem; 
+    width: 3rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(216, 16, 76);
+    border-radius: 200px;
+    padding: 0.5rem;
+    text-decoration: none;
+    box-shadow: 0 3px 5px rgb(102, 102, 102);
+    transition: 0.2s ease-out;
+}
 
+.back-to-top i {
+    font-size: 2rem;
+    transition: 0.2s ease-out;
+}
+
+.back-to-top:hover {
+    background-color: rgb(145, 20, 62);
+}
+
+.back-to-top i:hover {
+    transform: translateY(-5px);
+}
 
 /*================================
 Small devices (364px and 640px)
