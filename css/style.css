@@ -132,7 +132,7 @@ nav > ul > li > a {
 .hero-details {
     justify-content: center;
 }
-.hero-details p, .project-text p, #about-section p, #contact-section .contact-header p, #plutopay p, #webdesign p {
+.hero-details p, .project-text p, #about-section p, #contact-section .contact-header p {
 	color:  rgb(122, 122, 122);
 }
 
