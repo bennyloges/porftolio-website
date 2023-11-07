@@ -198,7 +198,7 @@ nav > ul > li > a {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: top;
+    align-items: flex-start;
     gap: 10px;
 }
 
@@ -235,7 +235,7 @@ nav > ul > li > a {
 
 .button {
     display: flex;
-    flex-direction: center;
+    justify-content: center;
     padding-bottom: 20px;
 }
 
@@ -262,7 +262,7 @@ nav > ul > li > a {
 }
 
 .project-button:active {
-    scale: 0.9;
+    transform: scale(0.9);
 }
 
 #web-design img {
@@ -380,7 +380,7 @@ nav > ul > li > a {
 
 .contact-details {
     display: flex;
-    flex-direction: space-between;
+    justify-content: space-between;
     justify-content: center;
 }
 
@@ -577,7 +577,7 @@ footer a:active {
 .img-col {
     display: flex;
     flex-direction: column;
-    justify-content: top;
+    justify-content: flex-start;
     align-items: center;
     text-align: center;
     width: 200px;
@@ -593,7 +593,7 @@ footer a:active {
 #define .container-project {
     text-align: left; 
     justify-content: center;
-    align-items: left;
+    align-items: start;
     margin: 0 auto;
 }
 
@@ -725,8 +725,9 @@ Small devices (364px and 640px)
  
     .skills-tools-details {
         margin: 0 auto;
+        width: 500px;
         display: flex;
-        align-items: center;
+        justify-content: center;
     }
 
     #about-section ul, #about-section h3 {
@@ -743,7 +744,7 @@ Small devices (364px and 640px)
 
     #projects-section .carousel {
     display: flex;
-    max-height: auto;
+    height: auto;
     grid-auto-flow: column;
     scroll-behavior: auto;
     overflow-y: auto;
@@ -835,7 +836,8 @@ Medium devices (640px to 1024px)
     .skills-tools-details {
         margin: 0 auto;
         display: flex;
-        align-items: center;
+        align-items: start;
+        justify-content: center;
     }
 
     #about-section ul, #about-section h3 {
@@ -897,4 +899,6 @@ Larger devices (1024px and larger)
         max-width: 1200px;
         padding: 50px;
     }
+
+
 }
