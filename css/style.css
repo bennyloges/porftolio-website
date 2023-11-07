@@ -727,6 +727,7 @@ Small devices (364px and 640px)
         margin: 0 auto;
         width: 500px;
         display: flex;
+        align-items: start;
         justify-content: center;
     }
 
