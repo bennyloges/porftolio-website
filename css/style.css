@@ -133,7 +133,7 @@ nav > ul > li > a {
     justify-content: center;
 }
 .hero-details p, .project-text p, #about-section p, #contact-section .contact-header p {
-	color:  rgb(122, 122, 122);
+	color:  rgb(92, 92, 92);
 }
 
 .hero-details .row {
@@ -174,7 +174,7 @@ nav > ul > li > a {
 /* ABOUT ME SECTION */
 
 #about-section {
-    background: rgba(124, 159, 160, 0.10);
+    background: rgba(124, 159, 160, 0.1);
     border-top: 1px solid rgb(102, 102, 102,0.2);
     border-bottom: 1px solid rgb(102, 102, 102,0.2);
 }
