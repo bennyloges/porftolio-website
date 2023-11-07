@@ -700,7 +700,7 @@ Small devices (364px and 640px)
     
     
     #hero-section img {
-        max-width: 100%;
+        width: auto;
     }
         
     #hero-section .container, #about-section .container {
