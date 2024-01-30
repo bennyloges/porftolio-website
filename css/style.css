@@ -236,6 +236,11 @@ nav > ul > li > a {
     text-align: center;
 }
 
+.pill #progress {
+    background-color: red;
+    color: white;
+}
+
 .project-img {
     display: flex;
     justify-content: center;
