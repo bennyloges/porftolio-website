@@ -224,6 +224,12 @@ nav > ul > li > a {
     box-shadow: 0 4px 15px rgb(102, 102, 102);
 }
 
+.pill {
+    display: inline-block;
+    padding: 2px 4px 2px 4px;
+    background-color: black;
+}
+
 .project-img {
     display: flex;
     justify-content: center;
