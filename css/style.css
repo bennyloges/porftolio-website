@@ -228,7 +228,6 @@ nav > ul > li > a {
     display: inline-block;
     padding: 2px 4px 2px 4px;
     width: 150px;
-    border: 1px solid black;
     border-radius: 100px;
 }
 
@@ -238,8 +237,11 @@ nav > ul > li > a {
 }
 
 #progress {
-    background-color: red;
-    color: white;
+    background-color: rgb(145, 20, 62);
+}
+
+#complete {
+    background-color: rgb(145, 20, 62);
 }
 
 .project-img {
