@@ -28,7 +28,7 @@ h4 {
     font-size: 1.35em;
     font-weight: 400;
 }
-h1 span, h2 span, h3 span, #webdesign p span {
+h1 span, h2 span, h3 span {
 	color: #038188;
     font-weight: 700;
 }
@@ -595,9 +595,10 @@ footer a:active {
     border-radius: 100px;
 }
 
-.pill p span {
+.pill p {
     text-align: center;
     color: white;
+    font-weight: 700;
 }
 
 #progress {
