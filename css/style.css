@@ -595,7 +595,7 @@ footer a:active {
     border-radius: 100px;
 }
 
-.pill p {
+.pill p span {
     text-align: center;
     color: white;
 }
