@@ -236,7 +236,7 @@ nav > ul > li > a {
     text-align: center;
 }
 
-.pill #progress {
+#progress {
     background-color: red;
     color: white;
 }
