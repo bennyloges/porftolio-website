@@ -227,7 +227,7 @@ nav > ul > li > a {
 .pill {
     display: inline-block;
     padding: 2px 4px 2px 4px;
-    width: 100px;
+    width: 200px;
     border: 1px solid black;
     border-radius: 100px;
 }
