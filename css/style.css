@@ -488,7 +488,7 @@ footer a:active {
 
 /* PROJECT CASE STUDY PAGES */
 
-#plutopay .divider {
+#plutopay .divider, #webdesign .divider {
     width: 1200px;
     margin: 20px auto;
 }
