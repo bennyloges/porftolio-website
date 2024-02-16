@@ -28,7 +28,7 @@ h4 {
     font-size: 1.35em;
     font-weight: 400;
 }
-h1 span, h2 span, h3 span, #webdesign p span {
+h1 span, h2 span, h3 span {
 	color: #038188;
     font-weight: 700;
 }
@@ -488,13 +488,18 @@ footer a:active {
 
 /* PROJECT CASE STUDY PAGES */
 
-#plutopay .divider {
+#plutopay .divider, #webdesign .divider {
     width: 1200px;
     margin: 20px auto;
 }
 
 #intro .project-title {
     font-size: 1.5rem;
+}
+
+#webdesign #ideate .concept-img {
+    max-width: 500px;
+    height: auto;
 }
 
 #intro #plutopay-img, #intro #webdesign-img {
@@ -587,6 +592,27 @@ footer a:active {
     margin-bottom: 100px;
 }
 
+
+.pill {
+    display: inline-block;
+    padding: 2px 4px 2px 4px;
+    width: 150px;
+    border-radius: 100px;
+}
+
+.pill p {
+    text-align: center;
+    color: white;
+    font-weight: 700;
+}
+
+#progress {
+    background-color: rgb(216, 16, 76);
+}
+
+#complete {
+    background-color: #01A79F;
+}
 
 /* PLUTOPAY PAGE */
 
